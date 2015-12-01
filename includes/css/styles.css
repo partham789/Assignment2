@@ -15,18 +15,11 @@ Notes:	 Hand coded for Stackroute
      text-align: center;
    }
 
-   #features img{
-       margin: 0 0 20px;
-       width: 340px;
-   }
-
    footer{
       background: #333;
       color: #eee;
       font-size: 11px;
       padding: 5px;
-
-
    }
 
 
@@ -39,12 +32,13 @@ body{
     }
 
    .well .pageheader{
-     margin-top:0;
+     margin-top:0px;
     }
 
    .well .pageheader h1{
      margin-top: 70%;
       }
+
      #featuresHeading{
        margin-top: 10px;
        margin-bottom: 10px;
@@ -54,10 +48,11 @@ body{
     ul.unstyled{
          list-style: none;
          padding: 0;
-
     }
 
-
+    #features img{
+      width: 100%;
+    }
 
 /* --------------------------------------
    Navbar
@@ -65,49 +60,66 @@ body{
    #searchInput{
     width:160px;
   }
+
  .navbar-brand{
     height: 4px;
     padding: 3px 14px;
     align-content: flex-end;
   }
-  .navi{
-background-color: black;
 
+  .navi{
+    background-color: #eee;
   }
 
+  .navbar-responsive-collapse{
 
+    word-spacing: 0px;
+
+  }
+  .navbar-responsive-collapse li a{
+      color:black;
+  }
+----------------------------------
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-#my_carousel{
-  margin-top: 60px;
-}
+   #my_carousel{
+     margin-top: 60px;
+     width:100%;
+   }
 
-.carousel-caption h4{
-  font-size:40px;
-  color: crimson;
-}
-#my_carousel .item {height:400px;}
+   .carousel-caption h4{
+     font-size:40px;
+     color: white;
+      }
 
-  #slide1{
-    background:url("../../images/slider1_mid.jpg") top center no-repeat;
-  }
+    #my_carousel .item {
+      height:400px;
+    }
+
+  /*#slide1{
+    background:url("../../images/slider1.jpg") top center no-repeat;
+    }
   #slide2{
-    background:url("../../images/slider2_mid.jpg") top center no-repeat;
-  }
+  background:url("../../images/slider2.jpg") top center no-repeat;
+    }
   #slide3{
-    background:url("../../images/slider3_mid.jpg") top center no-repeat;
-  }
-
+  background:url("../../images/slider3.jpg") top center no-repeat;
+    }*/
 
 
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-.alert{
-  margin-top: 20px;
-  display: none;
-}
+   #feat{
+     margin-top:60px;
+   }
+
+   #features p{
+     text-align: left;
+     margin-top: 5px;
+     font-size: 17px;
+   }
 
 
 /* --------------------------------------
@@ -115,42 +127,112 @@ background-color: black;
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
+@media (max-width:480px){
+  #my_carousel.item {
+    width:100%;
+  }
+  #my_carousel{
+    width: 100%;
+  }
+  /*#slide1{
+      background:url("../../images/slider1-sm.jpg") top center no-repeat;
+    }
+  #slide2{
+        background:url("../../images/slider2-sm.jpg") top center no-repeat;
+      }
+  #slide3{
+        background:url("../../images/slider3_sm.jpg") top center no-repeat;
+       }*/
 
+  .carousel-caption h4{
+     font-size:18px;
+     color: white;
+   }
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  #my_carousel .item {height:310px;}
-
-    #slide1{
-      background:url("../../images/slider1_sml.jpg") top center no-repeat;
-
+@media(max-width: 768px) {
+  #my_carousel{
+     width: 100%
+   }
+   #my_carousel .item {
+     width:100%;
+   }
+   #slide1 img,#slide2 img,#slide3 img{
+     height:100%;
+   }
+  /*#slide1{
+      background:url("../../images/slider1-md.jpg") top center no-repeat;
     }
     #slide2{
-      background:url("../../images/slider2_sml.jpg") top center no-repeat;
-
+      background:url("../../images/slider2-md.jpg") top center no-repeat;
     }
     #slide3{
-      background:url("../../images/slider3_sml.jpg") top center no-repeat;
-     }
+      background:url("../../images/slider3-md.jpg") top center no-repeat;
+    }*/
 
-   }
+    .carousel-caption h4{
+      font-size:30px;
+      color: white;
+    }
+      .navbar-brand img{
+      width:150px;
+    }
 
+}
+@media(max-width: 1000px) {
+  #my_carousel.item{
+    width:100%;
+  }
+  #slide1 img,#slide2 img,#slide3 img{
+    height:100%;
+  }
 
+  /*#slide1{
+    background:url("../../images/slider1-large.jpg") top center no-repeat;
+    width:100%;
+
+  }*/
+  .navbar-brand img{
+  width:150px;
+}
+  .navbar-responsive-collapse li a{
+      padding:4px;
+  }
+
+  .carousel-caption h4{
+    font-size:40px;
+    color: white;
+  }
+
+}
+@media(max-width: 1200px) {
+
+  #slide1 img,#slide2 img,#slide3 img{
+    height:100%;
+  }
+
+}
 /* Large desktop */
 @media (min-width: 1200px) {
-   #my_carousel .item {height:500px;}
-    #slide1{
-      background:url("../../images/slider1.jpg") top center no-repeat;
 
-    }
-    #slide2{
-      background:url("../../images/slider2.jpg") top center no-repeat;
+  #slide1 img,#slide2 img,#slide3 img{
+    height:100%;
+  }
+
+  /*#slide1{
+    background:url("../../images/slider1_large1.jpg") top center no-repeat;
+
+  }*/
+   /*#my_carousel .item {height:500px;}*/
+
+    /*#slide2{
+      background:url("../../images/slider2_large2.jpg") top center no-repeat;
 
     }
     #slide3{
-      background:url("../../images/slider3.jpg") top center no-repeat;
+      background:url("../../images/slider3_large3.jpg") top center no-repeat;
 
-    }
+    }*/
+
   }
