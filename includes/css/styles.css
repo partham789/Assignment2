@@ -22,6 +22,15 @@ Notes:	 Hand coded for Stackroute
       padding: 5px;
    }
 
+   #inputMessage{
+     margin-bottom: 15px;
+   }
+
+   .list-group-item-text{
+     line-height: 20px;
+     margin-bottom: 15px;
+   }
+
 
 /* --------------------------------------
    Typography
@@ -65,17 +74,16 @@ body{
     height: 4px;
     padding: 3px 14px;
     align-content: flex-end;
+
   }
 
-  .navi{
-    background-color: #eee;
-  }
 
-  .navbar-responsive-collapse{
+
+  /*.navbar-responsive-collapse{
 
     word-spacing: 0px;
 
-  }
+  }*/
   .navbar-responsive-collapse li a{
       color:black;
   }
@@ -83,7 +91,14 @@ body{
   .navbar-responsive-collapse li a:hover{
       color:crimson;
   }
-----------------------------------
+
+.dropdown-menu{
+
+  background-color:#eee;
+
+}
+
+
 /* --------------------------------------
    Carousel
    -------------------------------------- */
@@ -140,6 +155,8 @@ body{
   margin-top: 27px;
   margin-bottom: -15px;
 }
+
+
 }
 
 /* Landscape phone to portrait tablet */
