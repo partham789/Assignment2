@@ -79,12 +79,16 @@ body{
   .navbar-responsive-collapse li a{
       color:black;
   }
+
+  .navbar-responsive-collapse li a:hover{
+      color:crimson;
+  }
 ----------------------------------
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-   #my_carousel{
-     margin-top: 60px;
+  #my_carousel{
+     margin: 300px auto 20px;
      width:100%;
    }
 
@@ -97,15 +101,6 @@ body{
       height:400px;
     }
 
-  /*#slide1{
-    background:url("../../images/slider1.jpg") top center no-repeat;
-    }
-  #slide2{
-  background:url("../../images/slider2.jpg") top center no-repeat;
-    }
-  #slide3{
-  background:url("../../images/slider3.jpg") top center no-repeat;
-    }*/
 
 
 /* --------------------------------------
@@ -133,27 +128,25 @@ body{
   }
   #my_carousel{
     width: 100%;
+    margin:60px auto 20px;
   }
-  /*#slide1{
-      background:url("../../images/slider1-sm.jpg") top center no-repeat;
-    }
-  #slide2{
-        background:url("../../images/slider2-sm.jpg") top center no-repeat;
-      }
-  #slide3{
-        background:url("../../images/slider3_sm.jpg") top center no-repeat;
-       }*/
 
   .carousel-caption h4{
      font-size:18px;
      color: white;
    }
+.navbar-nav li a{
+  //padding: 10px;
+  margin-top: 27px;
+  margin-bottom: -15px;
+}
 }
 
 /* Landscape phone to portrait tablet */
 @media(max-width: 768px) {
   #my_carousel{
-     width: 100%
+     width: 100%;
+     margin: 60px auto 20px;
    }
    #my_carousel .item {
      width:100%;
@@ -161,15 +154,6 @@ body{
    #slide1 img,#slide2 img,#slide3 img{
      height:100%;
    }
-  /*#slide1{
-      background:url("../../images/slider1-md.jpg") top center no-repeat;
-    }
-    #slide2{
-      background:url("../../images/slider2-md.jpg") top center no-repeat;
-    }
-    #slide3{
-      background:url("../../images/slider3-md.jpg") top center no-repeat;
-    }*/
 
     .carousel-caption h4{
       font-size:30px;
@@ -181,6 +165,12 @@ body{
 
 }
 @media(max-width: 1000px) {
+
+  #my_carousel{
+     width: 100%;
+     margin: 60px auto 20px;
+   }
+
   #my_carousel.item{
     width:100%;
   }
@@ -188,11 +178,6 @@ body{
     height:100%;
   }
 
-  /*#slide1{
-    background:url("../../images/slider1-large.jpg") top center no-repeat;
-    width:100%;
-
-  }*/
   .navbar-brand img{
   width:150px;
 }
@@ -208,6 +193,10 @@ body{
 }
 @media(max-width: 1200px) {
 
+  #my_carousel{
+    margin:60px auto 20px;
+  }
+
   #slide1 img,#slide2 img,#slide3 img{
     height:100%;
   }
@@ -215,24 +204,11 @@ body{
 }
 /* Large desktop */
 @media (min-width: 1200px) {
-
+  #my_carousel{
+    margin:60px auto 20px;
+  }
   #slide1 img,#slide2 img,#slide3 img{
     height:100%;
   }
-
-  /*#slide1{
-    background:url("../../images/slider1_large1.jpg") top center no-repeat;
-
-  }*/
-   /*#my_carousel .item {height:500px;}*/
-
-    /*#slide2{
-      background:url("../../images/slider2_large2.jpg") top center no-repeat;
-
-    }
-    #slide3{
-      background:url("../../images/slider3_large3.jpg") top center no-repeat;
-
-    }*/
 
   }
